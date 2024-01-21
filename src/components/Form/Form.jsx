@@ -1,12 +1,15 @@
 import './Form.css';
 import { useState } from 'react';
 
-const Form = ()=>{
+const Form = ({newLocation})=>{
     const [city, setCity] = useState('')
 
     const onSubmit = (e) =>{
         e.preventDefault();
         console.log(city)
+        if(city==='' || !city) return
+
+        newLocation(city)
     }
 
     return(
