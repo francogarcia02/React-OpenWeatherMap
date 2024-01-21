@@ -5,3 +5,32 @@ body{
 .input-group{
   width: 60%;
 }
+
+.card{
+  max-width: 60%;
+}
+
+.card-title{
+  position: absolute;
+}
+
+.card-date{
+  position: absolute;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.card-temp{
+  position: absolute;
+  padding: 1rem;
+  margin-top: 13rem;
+}
+
+.card-desc{
+  position: absolute;
+  margin-top: 16rem;
+}
+
+.columna{
+  margin-left: 0.5rem;
+}

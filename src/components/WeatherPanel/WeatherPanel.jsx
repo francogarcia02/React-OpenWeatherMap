@@ -1,6 +1,7 @@
 import './WeatherPanel.css';
 import React, { useState } from 'react';
-import Form from '../Form/Form';
+import Form from './Bricks/Form/Form';
+import Card from './Bricks/Card/Card';
 
 const WeatherPanel = () =>{
     let urlWeather = 'https://api.openweathermap.org/data/2.5/weather?appid=15fb6130b3cdd2e2901970d9e6f35693&lang=es'
@@ -58,8 +59,14 @@ const WeatherPanel = () =>{
     }
 
     return(
-        <React.Fragment>
+        <React.Fragment className="container">
             <Form newLocation={getLocation}/>
+            <Card
+            showData={show}
+            loadingData={loading}
+            weather={weather}
+            forecast={forecast}
+            />
         </React.Fragment>
     )
 
