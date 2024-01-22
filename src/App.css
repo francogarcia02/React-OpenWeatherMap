@@ -7,7 +7,7 @@ body{
 }
 
 .card{
-  max-width: 60%;
+  max-width: 65%;
 }
 
 .card-title{
@@ -33,4 +33,5 @@ body{
 
 .columna{
   margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
